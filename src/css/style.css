@@ -1,0 +1,28 @@
+body {
+	margin: 0%;
+	font-family: montserrat, 'Courier New', monospace;
+	font-weight: bold;
+}
+
+.game-screen {
+	background-color: rgb(112, 174, 224);
+	width: 100vw;
+	height: 100vh;
+}
+
+.start-screen {
+	font-size: 90px;
+	text-align: center;
+	padding: 20px;
+	width: 300px;
+	background-color: rgb(76, 164, 108);
+	position: absolute;
+	left: 50%;
+	top: 30%;
+	transform: translate(-50%);
+}
+
+.start-screen:hover {
+	background-color: rgb(85, 192, 124);
+	cursor: pointer;
+}
