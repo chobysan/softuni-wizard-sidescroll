@@ -11,7 +11,7 @@ document.addEventListener('keydown', (e) => {
 document.addEventListener('keyup', (e) => {
     if(availableKeys.includes(e.code)) {
 	state.keys[e.code] = false;
-    }
+    } 
 });
 
 game.startScreen.addEventListener('click', (e) => {
