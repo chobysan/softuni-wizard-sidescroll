@@ -1,24 +1,28 @@
 function initObject(params) {
 	const startScreen = document.querySelector('.start-screen');
 	const gameScreen = document.querySelector('.game-screen');
+	const scoreScreen = document.querySelector('.score');
+
 	return {
 		startScreen,
 		gameScreen,
-		createWizard(initialState) {
-			let wizardElement = document.createElement('div');
-			wizardElement.classList.add('wizard');
+		scoreScreen,
 
-			wizardElement.style.height = initialState.height + 'px';
-			wizardElement.style.width = initialState.width + 'px';
+		createMoogle(initialState) {
+			let moogleElement = document.createElement('div');
+			moogleElement.classList.add('moogle');
 
-			wizardElement.style.left = initialState.poxX + 'px';
-			wizardElement.style.top = initialState.posY + 'px';
+			moogleElement.style.width = initialState.width + 'px';
+			moogleElement.style.height = initialState.height + 'px';
 
-			this.wizardElement = wizardElement;
+			moogleElement.style.left = initialState.poxX + 'px';
+			moogleElement.style.top = initialState.posY + 'px';
 
-			gameScreen.appendChild(wizardElement);
+			this.moogleElement = moogleElement;
 
-			return wizardElement;
+			gameScreen.appendChild(moogleElement);
+
+			return moogleElement;
 		},
 	};
 }
